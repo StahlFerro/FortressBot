@@ -14,7 +14,7 @@ Welcome to FortressBot's documentation!
     syntax_guide
 
 .. toctree::
-    :maxdepth: 10
+    :maxdepth: 1
     :caption: Modules & Commands
     
     administration
