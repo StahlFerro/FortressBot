@@ -2,21 +2,18 @@
 Syntax Guide
 ***************
 
-----------------------------
-Command Syntax Guidelines
-----------------------------
-
 FortressBot's command syntax format are defined in this following example:
 
 .. code::
 
-    ]acommand (user) (users ...) [channel] [role] < -fun | -serious | -relaxed >
+    ]acommand (user) (users ...) [channel] [role] < -fun | -serious | -relaxed > { 1 - 1337 }
 
 
 - ``()`` Parentheses means the argument is required.
-- ``[]`` Square brackets means the argument is optional.
+- ``[]`` Square brackets means the argument is optional. May contain other brackets inside it, marking them optional as well.
 - ``<>`` Arguments enclosed between these are required options.
-- ``user`` A discord user. Can be supplied with their tag, username, username#discrim, or user id. Nicknames are not allowed Examples:
+- ``{}`` Braces means a required number within the specified range. On the example above, it means it can be any number between 1 and 1337.
+- ``user`` A discord user. Can be supplied with their tag, username, username#discrim, or user id. Nicknames are not allowed. Examples:
 
     - ``@StahlFerro``
     - ``StahlFerro``

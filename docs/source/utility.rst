@@ -110,7 +110,7 @@ Displays a list of every role in the server and how many users have them.
 
 .. code::
 
-	]rolelist [number]
+	]rolelist {1 - n}
 
 Example:
 
@@ -124,11 +124,11 @@ Displays a table of server roles and their permissions.
 
 .. code::
 
-	]roletable < 1 - n >
+	]roletable { 1 - n }
 
 Example:
 
-``]roletable 1`` (page number)
+``]roletable 1`` 
 
 ....
 

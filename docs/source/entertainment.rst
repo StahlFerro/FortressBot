@@ -41,9 +41,14 @@ Pays respects.
 
 	]f [text]
 
-Example:
+Examples:
 
-``]f` or `]f bork bot`` 
+- ``]f``
+  Pays respect
+
+- ``]f bork bot``
+  Pays respect to bork bot
+
 
 ....
 
@@ -51,13 +56,17 @@ hitmark
 ---------------
 Places a hitmark on a user's avatar.
 
-Examples
+.. code::
+
+	]hitmark [user]
+
+Examples:
 
 - ``]hitmark``
-  hitmark your own avatar
+  Hitmark your own avatar
 
-- ``]hitmark @user` or `]hitmark Ferro``
-  hitmark other user's avatar
+- ``]hitmark Graf``
+  Hitmark Graf's avatar
 
 
 ....
@@ -145,11 +154,16 @@ Gives a random number between a specified range.
 
 .. code::
 
-	]roll < -2147483648 - 2147483647 > [< -2147483648 - 2147483647 >]
+	]roll { -2147483648 - 2147483647 } [{ -2147483648 - 2147483647 }]
 
-Example:
+Examples:
 
-``]roll 140` or `]roll 10 100`` 
+- ``]roll 140``
+  Rolls between 0 and 140
+
+- ``]roll 10 100``
+  Rolls between 10 and 100
+
 
 ....
 
