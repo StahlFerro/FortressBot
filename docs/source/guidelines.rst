@@ -2,7 +2,6 @@
 Guidelines
 ***************
 
-
 Primer
 ----------------
 As a moderation-oriented bot, it should be given the appropriate permissions on a server in order for it to operate its functions that require additional 
@@ -13,6 +12,15 @@ A good understanding of discord's permission system and role hierarchy is recomm
 managerial permissions, e.g., mute, kick, ban, message pruning or invitenuke commands; adjusting them to your server's set of roles and permissions.
 
 
+Getting Started
+----------------
+After inviting FortressBot to your server, you can start by bringing up it's entire command list by typing ``]h``. Information on how to use a certain command can
+be displayed by typing ``]help command_name``.
+
+.. WARNING::
+    FortressBot does not reply with anything if you mistyped a command.
+
+
 Command Syntax
 ----------------
 
@@ -20,13 +28,24 @@ FortressBot's command syntax format is defined in this following example:
 
 .. code::
 
-    ]acommand (user) (users ...) [channel] [role] (timestring) < -fun | -serious | -relaxed > { 1 - 1337 }
+    ]somecommand (user) (users ...) [channel] [role] (timestring) < -fun | -serious | -relaxed > { 1 - 1337 }
 
+
+**Argument types**
+
+These define the different types of arguments in a command.
 
 - ``()`` Parentheses means the argument is required.
 - ``[]`` Square brackets means the argument is optional. May contain other brackets inside it, marking them optional as well.
-- ``<>`` Arguments enclosed between these are required options.
+- ``<>`` Arguments enclosed between these are required options. As defined on the example above there are 3 options to choose from which are ``-fun``, ``-serious`` or ``-relaxed``
 - ``{}`` Braces means a required number within the specified range. On the example above, it means it can be any number between 1 and 1337.
+
+
+**Discord objects**
+
+Discord objects are anything that are a component of the server that can be parsed by commands, e.g. channels, roles and users. Below are details on how
+each of them are expressed when using commands.
+
 - ``user`` A discord user. Can be supplied with their tag, username, username#discrim, or user id. Nicknames are not allowed. Examples:
 
     - ``@StahlFerro``
@@ -44,12 +63,13 @@ FortressBot's command syntax format is defined in this following example:
     - ``Moderator``
     - ``487094250836852751``
 
-- ``...`` One or more of the previous identifiers. Examples:
+- ``...`` Elipsis defines supporting an input of one or more of the previous identifiers. Examples:
 
-    - ``(users ...) -> ``@StahlFerro @Martin``
-    - ``(channels ...)`` ->``#general #mod-logs #memes-room``
-    - ``"Dellia Agate" @Marzinyu`` If you want to specify a user by their name and it has spaces, enclose them in double quotation marks
-    - ``306467828729380874 332603467577425929``
+    - ``users ...`` -> ``StahlFerro#0055 Marzinyu @Grafwel "Jackie Chan"`` User tag, username, username#discrim or id
+    - ``channels ...`` -> ``#general 455310436091428874 #memes-room`` Channel tag or id
+    - ``roles ...`` -> ``King "Junior Mods" 487094416599679006`` Role name, or id
+    
+    *Notice that double quotation marks are required for usernames/roles with spaces, to avoid mistaking them as two different users/roles*
 
 - ``timestring`` See below section.
 
