@@ -11,7 +11,7 @@ Welcome to FortressBot's documentation!
     :caption: Contents
     
     introduction
-    syntax_guide
+    guidelines
 
 .. toctree::
     :maxdepth: 1

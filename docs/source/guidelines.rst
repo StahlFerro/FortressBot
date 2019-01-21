@@ -1,8 +1,15 @@
 ***************
-Syntax Guide
+Guidelines
 ***************
 
-FortressBot's command syntax format are defined in this following example:
+
+
+
+
+Command Syntax
+----------------
+
+FortressBot's command syntax format is defined in this following example:
 
 .. code::
 
@@ -38,3 +45,30 @@ FortressBot's command syntax format are defined in this following example:
     - ``487094250836852751``
 
 Syntax-less commands found in the documentation does not require arguments at all.
+
+
+Timestrings
+--------------
+
+Timestring is a format that expresses time durations, and is FortressBot's default time format for commands.
+
+
+Below is the format example of a timestring
+
+.. code::
+
+    000.000y-111.111mo-222.22w-333.33d-444.44h-555.5m-666s
+
+[y](years) [mo](months) [w](weeks) [d](days) [h](hours) [m](minutes) [s](seconds)
+
+All of the 7 units of time above accepts numbers up to hundreds, but some has different decimal precision.
+Years and months accepts up to 3 decimal numbers.
+Weeks, days and hours accepts up to 2 decimal numbers.
+Minutes only accepts up to 1 decimal number.
+Seconds does not accept decimals at all
+
+Examples:
+
+- ``2h5m`` (2 hours and 5 minutes)
+- ``4.5h`` or ``4h30m`` (4 hours and 30 minutes)
+- ``1w1d`` or ``8d`` (8 days)
