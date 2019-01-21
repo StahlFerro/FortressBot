@@ -13,10 +13,10 @@ Encodes or decodes a string into/from base64.
 Examples:
 
 - ``]base64 -e ayylmao``
-  
+  -e for encoding the text into base64
 
 - ``]base64 -d bG1hb2F5eQ==``
-  
+  -d for decoding the base64 string into plain text
 
 
 ....
@@ -27,15 +27,15 @@ Encrypts or decrypts a text using the Caesar cipher.
 
 .. code::
 
-	]caesar < -e | -d > < -26 - 26 > (text)
+	]caesar < -e | -d > { -26 - 26 } (text)
 
 Examples:
 
 - ``]caesar -e 12 I am trained in ban warfare``
-  
+  Encrypt the text, shifting it 12 characters forward
 
 - ``]caesar -d 9 jwm R'v cqn cxy vxmnajcxa rw cqn nwcran mrblxam javnm oxalnb``
-  
+  Decrypt the text, shifting it 9 characters backward
 
 
 ....
@@ -94,7 +94,7 @@ Previews a sample of a color.
 
 Example:
 
-``]color #0070FF` (`#`` sign is optional)
+``]color #0070FF`` (hash sign is optional)
 
 ....
 
@@ -104,7 +104,7 @@ IP calculator for class C subnets.
 
 .. code::
 
-	]ipcalc < 24 - 30 >
+	]ipcalc { 24 - 30 }
 
 Example:
 
@@ -114,7 +114,7 @@ Example:
 
 nco
 ---------------
-Converts any number from one numeral system to the others.
+Converts any number from one numeral system to the others. The format of the number must correspond to the chosen option
 
 .. code::
 
@@ -153,7 +153,7 @@ Generates a random string of the given length (min 1, max 1000) with options
 
 .. code::
 
-	]strgen < 1 - 1000 > [< -n | -u | -l >]
+	]strgen { 1 - 1000 } [< -n | -u | -l >]
 
 Examples:
 
@@ -196,14 +196,14 @@ Expresses the time in utc, and in another time zone additionally.
 
 .. code::
 
-	]time [< -12 - 12 >]
+	]time [{ -12 - 12 }]
 
 Examples:
 
 - ``]time``
-  current time in UTC
+  Current time in UTC
 
 - ``]time -8``
-  current time in UTC and in GMT-8
+  Current time in UTC and in GMT-8
 
 

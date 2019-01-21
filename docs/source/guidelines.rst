@@ -20,7 +20,7 @@ FortressBot's command syntax format is defined in this following example:
 
 .. code::
 
-    ]acommand (user) (users ...) [channel] [role] < -fun | -serious | -relaxed > { 1 - 1337 }
+    ]acommand (user) (users ...) [channel] [role] (timestring) < -fun | -serious | -relaxed > { 1 - 1337 }
 
 
 - ``()`` Parentheses means the argument is required.
@@ -34,13 +34,6 @@ FortressBot's command syntax format is defined in this following example:
     - ``StahlFerro#0055``
     - ``300611567874080769``
 
-- ``users ...`` One or more discord users. Similar with above rule. Examples:
-
-    - ``@StahlFerro @Martin``
-    - ``Argus Levia``
-    - ``"Dellia Agate" @Marzinyu`` If you want to specify a user by their name and it has spaces, enclose them in double quotation marks
-    - ``306467828729380874 332603467577425929``
-
 - ``channel`` A discord channel. Can be supplied by its tag or id. Examples:
 
     - ``#cool-channel``
@@ -50,6 +43,15 @@ FortressBot's command syntax format is defined in this following example:
 
     - ``Moderator``
     - ``487094250836852751``
+
+- ``...`` One or more of the previous identifiers. Examples:
+
+    - ``(users ...) -> ``@StahlFerro @Martin``
+    - ``(channels ...)`` ->``#general #mod-logs #memes-room``
+    - ``"Dellia Agate" @Marzinyu`` If you want to specify a user by their name and it has spaces, enclose them in double quotation marks
+    - ``306467828729380874 332603467577425929``
+
+- ``timestring`` See below section.
 
 Syntax-less commands found in the documentation does not require arguments at all.
 

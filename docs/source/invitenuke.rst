@@ -78,7 +78,7 @@ InviteNuke Exception Roles: View, add or remove roles that will bypass the Invit
 
 .. code::
 
-	]iexrole [< add | remove | clear >] [roles ...] (roles parameter accepts role tags or ids)
+	]iexrole [< add | remove | clear >] [roles ...] (roles parameter accepts role names or ids)
 
 Examples:
 

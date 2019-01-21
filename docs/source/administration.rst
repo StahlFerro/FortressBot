@@ -46,11 +46,11 @@ Both User and FortressBot must have Ban Members permission
 
 !clear
 ---------------
-Removes all of FortressBot's messages.
+Removes a number of FortressBot's messages.
 
 .. code::
 
-	]!clear < 1- 100 >
+	]!clear { 1- 100 }
 
 Example:
 
@@ -229,10 +229,10 @@ Pins a message in a channel.
 Examples:
 
 - ``]!pin``
-  (pins the latest message in a channel)
+  Pins the latest message in a channel
 
 - ``]!pin ASDFJKL``
-  (pins the message ASDFJKL)
+  Pins the message ASDFJKL
 
 Both User and FortressBot must have Manage Messages permission
 
@@ -245,7 +245,7 @@ Deletes messages in a channel with the given amount.
 
 .. code::
 
-	]!prune < 1 - 1000000 > [< user_id | "string" | -links | -images | -bots | -reactions >]
+	]!prune { 1 - 1000000 } [< user_id | "string" | -links | -images | -bots | -reactions >]
 
 Examples:
 
@@ -258,8 +258,8 @@ Examples:
 - ``]!prune 13 @Shusui``
   Deletes 13 of Shusui's messages
 
-- ``]!prune 37 user_id``
-  Deletes 37 of that user's messages. Don't include the brackets
+- ``]!prune 37 223161712092774402``
+  Deletes 37 of messages made by a user with that id.
 
 - ``]!prune 90 -links``
   Deletes 90 messages containing clickable links
