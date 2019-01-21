@@ -3,7 +3,14 @@ Guidelines
 ***************
 
 
+Primer
+----------------
+As a moderation-oriented bot, it should be given the appropriate permissions on a server in order for it to operate its functions that require additional 
+permissions. Upon joining a server, FortressBot would automatically have a role with the same name created in the server. Deleting this role while 
+FortressBot is in the server is highly discouraged, as it would make it unable to function properly in the server.
 
+A good understanding of discord's permission system and role hierarchy is recommended when setting up or using FortressBot's commands that requires 
+managerial permissions, e.g., mute, kick, ban, message pruning or invitenuke commands; adjusting them to your server's set of roles and permissions.
 
 
 Command Syntax
@@ -48,18 +55,18 @@ Syntax-less commands found in the documentation does not require arguments at al
 
 
 Timestrings
---------------
+----------------
 
 Timestring is a format that expresses time durations, and is FortressBot's default time format for commands.
 
 
-Below is the format example of a timestring
+Below is the format of a timestring
 
 .. code::
 
     000.000y-111.111mo-222.22w-333.33d-444.44h-555.5m-666s
 
-[y](years) [mo](months) [w](weeks) [d](days) [h](hours) [m](minutes) [s](seconds)
+``y`` years, ``mo`` months, ``w`` weeks, ``d`` days, ``h`` hours, ``m`` minutes, ``s`` seconds
 
 All of the 7 units of time above accepts numbers up to hundreds, but some has different decimal precision.
 Years and months accepts up to 3 decimal numbers.
