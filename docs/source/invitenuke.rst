@@ -102,6 +102,33 @@ Both User and FortressBot must have Manage Messages permission for adding and re
 
 ....
 
+ilog
+---------------
+InviteNuke Logging: Turn on, off logging feature to record every invite links nuked. Also set which channel FortressBot should log them in
+
+.. code::
+
+	]ilog < off | on | set | clear > [text channel]
+
+Examples:
+
+- ``]ilog off``
+  Turns off logging
+
+- ``]ilog on``
+  Turns on logging
+
+- ``]ilog set #my-channel``
+  Sets the channel as a place for FortressBot to log invitenuke actions
+
+- ``]ilog clear``
+  Remove the log channel
+
+Both User and FortressBot must have Manage Channels permission
+
+
+....
+
 imode
 ---------------
 Changes the InviteNuke's mode.
