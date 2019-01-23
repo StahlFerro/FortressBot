@@ -78,6 +78,33 @@ Both User and FortressBot must have Manage Nicknames permission
 
 ....
 
+nwlog
+---------------
+NameWash Logging: Turn on, off logging feature to record every user's username/nickname washed. Also set which channel FortressBot should log them in
+
+.. code::
+
+	]ilog < off | on | set | clear > [text channel]
+
+Examples:
+
+- ``]nwlog off``
+  Turns off logging
+
+- ``]nwlog on``
+  Turns on logging
+
+- ``]nwlog set #my-channel``
+  Sets the channel as a place for FortressBot to log namewash actions
+
+- ``]nwlog clear``
+  Remove the log channel
+
+Both User and FortressBot must have Manage Channels permission
+
+
+....
+
 nwmode
 ---------------
 Changes the behavior of the auto-NameWash
