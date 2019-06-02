@@ -13,6 +13,7 @@ Locks all the text channels in a server, preventing anyone without Administrator
 Example:
 
 ``]!!serverlock mass raid`` 
+
 Both User and FortressBot must have Administrator permission
 
 
@@ -40,6 +41,7 @@ Locks a channel, preventing anyone without an administrator role to post message
 Example:
 
 ``]!chatlock #general too much spamming`` (lockdown reasons are optional)
+
 Both User and FortressBot must have Administrator permission
 
 
@@ -56,6 +58,7 @@ Unlocks a locked channel.
 Example:
 
 ``]!chatunlock #general`` 
+
 Both User and FortressBot must have Administrator permission
 
 
@@ -72,6 +75,7 @@ Disable reactions in a channel for everyone except Administrators
 Example:
 
 ``]!reactionlock #general 3manyreactions5me`` (reactionlock reasons are optional)
+
 Both User and FortressBot must have Administrator permission
 
 
@@ -88,6 +92,7 @@ Re-enable reactions in a channel
 Example:
 
 ``]!reactionunlock #general`` 
+
 Both User and FortressBot must have Administrator permission
 
 

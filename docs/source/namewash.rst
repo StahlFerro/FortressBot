@@ -34,6 +34,7 @@ Similar to nwash, but targets everyone in the server
 Example:
 
 ``]nwasheveryone dehoist`` 
+
 Both User and FortressBot must have Administrator and Manage Nicknames permission
 
 
@@ -95,7 +96,7 @@ Examples:
   Turns on logging
 
 - ``]nwlog set #my-channel``
-  Sets the channel as a place for FortressBot to log namewash actions
+  Sets #my-channel as a place for FortressBot to log namewash actions
 
 - ``]nwlog clear``
   Remove the log channel
@@ -116,6 +117,7 @@ Changes the behavior of the auto-NameWash
 Example:
 
 ``]nwmode asciify`` 
+
 The different Modes define the behavior of the NameWash
 
 - ``Dehoist``
@@ -126,6 +128,32 @@ The different Modes define the behavior of the NameWash
 
 - ``Full``
   : Dehoists and Ascii-fies names simultaneously
+
+Both User and FortressBot must have Manage Nicknames permission
+
+
+....
+
+nwnaxchars
+---------------
+Changes the NameWash's non-ascii exception characters. (Maximum exceptions: 50 characters)
+
+.. code::
+
+	]nwnaxchars < add | remove | clear > [character...]
+
+Examples:
+
+- ``]nwnaxchars add ♜``
+  Adds the black chess rook character
+
+- ``]nwnaxchars remove ❄``
+  Removes the snowflake character
+
+- ``]nwnaxchars clear``
+  Clears all of the exceptions
+
+Sidenote: Adding duplicate characters are ignored
 
 Both User and FortressBot must have Manage Nicknames permission
 

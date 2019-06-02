@@ -31,6 +31,7 @@ Example:
 
 ``]asciirekt xdd`` 
 
+
 ....
 
 f
@@ -90,6 +91,7 @@ Example:
 
 ``]mlgfy FortressBot`` 
 
+
 ....
 
 navypasta
@@ -118,6 +120,7 @@ Example:
 
 ``]rate my pizza`` 
 
+
 ....
 
 rev
@@ -131,6 +134,7 @@ reverses an input text.
 Example:
 
 ``]rev wizzard`` 
+
 
 ....
 
@@ -178,4 +182,5 @@ xd.
 Example:
 
 ``]xd 50`` 
+
 

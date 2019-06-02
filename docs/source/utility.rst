@@ -60,6 +60,7 @@ Example:
 
 ``]hasrole Staff`` 
 
+
 ....
 
 invite
@@ -80,6 +81,7 @@ Enlarge an emote.
 Example:
 
 ``]magnify :thinking:`` 
+
 
 ....
 
@@ -102,6 +104,7 @@ Example:
 
 ``]roleinfo Moderator`` 
 
+
 ....
 
 rolelist
@@ -116,6 +119,7 @@ Example:
 
 ``]rolelist 1`` 
 
+
 ....
 
 roletable
@@ -129,6 +133,7 @@ Displays a table of server roles and their permissions.
 Example:
 
 ``]roletable 1`` 
+
 
 ....
 

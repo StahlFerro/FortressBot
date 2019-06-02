@@ -96,6 +96,7 @@ Example:
 
 ``]color #0070FF`` (hash sign is optional)
 
+
 ....
 
 ipcalc
@@ -109,6 +110,7 @@ IP calculator for class C subnets.
 Example:
 
 ``]ipcalc 28`` (use CIDR number, range: 24-30)
+
 
 ....
 
@@ -144,6 +146,7 @@ Lists the amount of characters in a string
 Example:
 
 ``]strcomp STAhL F3Rr0`` 
+
 
 ....
 
@@ -187,6 +190,7 @@ Returns the length of a string
 Example:
 
 ``]strlen ABCDEFGHIJKL`` (returns 12)
+
 
 ....
 

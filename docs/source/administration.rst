@@ -13,6 +13,7 @@ Adds a role to one or more users.
 Example:
 
 ``]!adr Moderator @User1 @User2 @User3`` 
+
 (max: 50 users)
 
 Both User and FortressBot must have Manage Roles permission
@@ -55,6 +56,7 @@ Removes a number of FortressBot's messages.
 Example:
 
 ``]!clear 70`` (default amount: 10)
+
 Both User and FortressBot must have Manage Messages permission
 
 
@@ -126,6 +128,7 @@ Bans multiple users at once.
 Example:
 
 ``]!massban "Raiding and spamming" @User1  @User2  @User3`` 
+
 (max: 50 users, use "" for no ban reason)
 
 Both User and FortressBot must have Ban Members permission
@@ -144,6 +147,7 @@ Kicks multiple users at once.
 Example:
 
 ``]!masskick "Raiding" @User1  @User2  @User3`` 
+
 (max: 50 users, use "" for no kick reason)
 
 Both User and FortressBot must have Kick Members permission
@@ -217,6 +221,7 @@ Sets a nickname for a user. Leaving the parameter blank resets their nickname.
 Example:
 
 ``]!nick @user supernick`` 
+
 Both User and FortressBot must have Manage Nicknames permission
 
 
@@ -291,6 +296,7 @@ Remove a role from one or more users.
 Example:
 
 ``]!rmr Officer @User1 @User2 @User3`` 
+
 (max: 50 users)
 
 Both User and FortressBot must have Manage Roles permission
@@ -309,6 +315,7 @@ Removes all of a user's roles. This doesn't remove the ``Fortress Muted`` role.
 Example:
 
 ``]!rolepurge @User`` 
+
 Both User and FortressBot must have Manage Roles permission
 
 
@@ -325,6 +332,7 @@ Unbans a user.
 Example:
 
 ``]!unban 223161712092774402`` 
+
 Both User and FortressBot must have Ban Members permission
 
 
